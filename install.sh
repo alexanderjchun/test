@@ -3,9 +3,6 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-# Set the URL for the Ansible repository
-ANSIBLE_REPO_URL="https://github.com/alexanderjchun/test"
-
 # Change to the home directory
 cd "$HOME"
 
@@ -16,4 +13,4 @@ cd "$HOME"
 brew install ansible
 
 # Run ansible-pull to clone the repo and execute the playbook
-ansible-pull -U "$ANSIBLE_REPO_URL" playbooks/main.yml --ask-become-pass
+ansible-pull -U "https://github.com/alexanderjchun/test" playbooks/main.yml --ask-become-pass
