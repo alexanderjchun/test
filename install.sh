@@ -4,7 +4,7 @@
 set -e
 
 # Set the URL for the Ansible repository
-ANSIBLE_REPO_URL="https://github.com/alexanderjchun/test.git"
+ANSIBLE_REPO_URL="https://github.com/alexanderjchun/test"
 
 # Change to the home directory
 cd "$HOME"
