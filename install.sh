@@ -14,6 +14,12 @@ echo "Installing Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "Homebrew installation complete"
 
+# Setup .zprofile
+echo "Setting up .zprofile..."
+echo >>/Users/chun/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>/Users/chun/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Use Homebrew to install Ansible
 echo "Installing Ansible..."
 brew install ansible
